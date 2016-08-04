@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>SenVarA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--     <h:outputStylesheet name="css/bootstrap.css" /> -->
+    <link rel="stylesheet" type="text/css" href="#{request.contextPath}/resources/css/bootstrap.css"/>
+    <h:outputScript name="js/bootstrap.js" />
+    <h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+<!--  	<h:outputScript name="js/jquery.min.js" /> -->
+
+</h:head>
+<h:body>
+    
+    <div id="container">
+ <!--========================================================
+                            HEADER
+  =========================================================--> 
+  
+    	<div class="container">
+	        <div class="navbar-header">	
+	        	<div class="row">
+	        		<div class="col-lg-12 col-sm-12">
+	        			<img src="resources/img/Banner.png" class="img-responsive"/>
+	        			
+	        		</div>		        		
+	        	</div> 
+	        </div>
+      	</div>
+      
+ <!--========================================================
+                           CONTENIDO
+  =========================================================--> 
+    
+    
+        <div id="content">
+            <ui:insert name="contenido">
+                    [Aqui va el contenido de la pagina]
+         	</ui:insert>
+        </div>
+        
+        
+ <!--========================================================
+                           FOOTER
+  =========================================================--> 
+  	<div>			
+		<footer class="text-center">
+		  <a class="up-arrow" href="index.html" data-toggle="tooltip" title="Inicio">
+		    <span class="glyphicon glyphicon-chevron-up"></span>
+		  </a><br/>
+		  <p>Proyecto de Grado SenVarA <br/> 
+		  <small>Stiven Toledo Burgos - Ingenieria de Sistemas.</small></p>  
+		</footer>
+	</div>
+	
+	</div>
+</h:body>
+</html>
